@@ -1,4 +1,4 @@
-import db from '../db/connection'
+import db from '../../db/connection'
 import { DataTypes } from 'sequelize'
 
 const User = db.define(

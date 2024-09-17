@@ -5,7 +5,8 @@
 /tmp
 /out-tsc
 /bazel-out
-/src/db
+/db
+.env
 
 # Node
 /node_modules

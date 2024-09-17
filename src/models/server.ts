@@ -1,7 +1,7 @@
 import express, { Application, Request, Response }  from 'express';
 import ApiProduct  from '../routes/product';
 import ApiDressed from '../routes/dressed'
-import db from '../db/connection';
+import db from '../../db/connection';
 import cors from 'cors';
 
 class Server {
