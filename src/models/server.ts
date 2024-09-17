@@ -24,20 +24,16 @@ class Server {
         })
      }
 
+     // Funcion que incializa la aplicacion y define filtros para pedir
      middleware(){
         this.app.use(express.json());
-
-         this.app.use(cors());
+        this.app.use(cors()); //Configurar el cors en dado caso
      }
 
+     // Rutas de los controoladores
      routes(){
-        this.app.get('/', (req: Request,res: Response) => {
-            res.json({
-                msg: 'API Working'
-            })
-            this.app.use('/api/product',ApiProduct);
-            this.app.use('/api/dressed',ApiDressed);
-        })
+        this.app.use('/api/product',ApiProduct);
+        this.app.use('/api/dressed',ApiDressed);
      }
 
     async dbConnect(){
